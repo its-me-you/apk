@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme.Broraa" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@color/black</item>
+        <item name="android:navigationBarColor">@color/black</item>
+        <item name="android:windowBackground">@color/black</item>
+    </style>
+
+    <!-- Shown for a moment at cold start, then swaps to Theme.Broraa automatically -->
+    <style name="Theme.Broraa.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/black</item>
+        <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher</item>
+        <item name="postSplashScreenTheme">@style/Theme.Broraa</item>
+    </style>
+
+</resources>
